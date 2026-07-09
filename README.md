@@ -1,7 +1,7 @@
 # A Standardized Benchmark of Generative Models Across Medical Imaging Modalities
 
 ## Features
-![overview](figures\figure1.png)
+![overview](figures/figure1.png)
 - 📊 **Standardized Multi-modality Benchmark**  
   A unified benchmarking framework covering six medical imaging domains, enabling fair comparison across diverse generative models under consistent data preprocessing and mask-to-image protocols.
 
@@ -591,7 +591,7 @@ In practical applications, generated samples often exhibit significant variabili
 
 To address this issue, we propose a sample-level utility evaluation and data curation strategy, which selects high-quality synthetic samples for downstream tasks (e.g., segmentation).
 
-![overview](figures\figure2.png)
+![overview](figures/figure2.png)
 ---
 
 ### 🔹 Method Overview
