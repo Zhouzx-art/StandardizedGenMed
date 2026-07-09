@@ -1,0 +1,30 @@
+data_type=chaos
+types=3
+diffusion_img_size=256
+diffusion_depth_size=1
+diffusion_num_channels=3
+batch_size=16
+test_txt_dir=/path/to/your/DATASET/test.txt
+dataset_root_dir=/path/to/your/DATASET/Chaos_resize/imgs/train
+target_img_path=data/Chaos/gen/Image/
+target_label_path=data/Chaos/gen/Mask/
+model_path=LeFusion/LeFusion_Model/Chaos/model-2.pt
+jump_length=2
+jump_n_sample=2
+cond_dim=48
+
+python LeFusion/inference/inference.py \
+    data_type=$data_type \
+    types=$types\
+    diffusion_img_size=$diffusion_img_size \
+    diffusion_depth_size=$diffusion_depth_size \
+    diffusion_num_channels=$diffusion_num_channels \
+    batch_size=$batch_size \
+    test_txt_dir=$test_txt_dir \
+    dataset_root_dir=$dataset_root_dir \
+    target_img_path=$target_img_path \
+    target_label_path=$target_label_path \
+    schedule_jump_params.jump_length=$jump_length \
+    schedule_jump_params.jump_n_sample=$jump_n_sample \
+    cond_dim=$cond_dim \
+    model_path=$model_path \
